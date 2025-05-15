@@ -14,8 +14,6 @@ def load_models(device):
     sess_options = ort.SessionOptions()
     sess_options.intra_op_num_threads = 8
 
-
-    
     session = ort.InferenceSession(
         '../depth_anything_v2_vitb.onnx', 
         sess_options=sess_options, 
